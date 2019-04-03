@@ -1,2 +1,4 @@
 training_checkpoints
 out.txt
+node_modules
+organizations.csv

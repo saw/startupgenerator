@@ -1,0 +1,23 @@
+{
+  "name": "startupgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parseorgs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saw/startupgenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saw/startupgenerator/issues"
+  },
+  "homepage": "https://github.com/saw/startupgenerator#readme",
+  "dependencies": {
+    "csv": "^5.1.1",
+    "csv-parse": "^4.3.4"
+  }
+}
