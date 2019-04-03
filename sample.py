@@ -14,7 +14,7 @@ embedding_dim = 256
 rnn_units = 1024
 
 
-text = open('out.txt', 'rb').read().decode(encoding='utf-8')
+text = open('companies.txt', 'rb').read().decode(encoding='utf-8')
 print ('Length of text: {} characters'.format(len(text)))
 vocab = sorted(set(text))
 # print ('{} unique characters'.format(len(vocab)))
@@ -77,6 +77,7 @@ else:
     tf.keras.layers.GRU, recurrent_activation='sigmoid')
 
 def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
+  print(vocab_size, embedding_dim, rnn_units, batch_size);
   model = tf.keras.Sequential([
     tf.keras.layers.Embedding(vocab_size, embedding_dim, 
                               batch_input_shape=[batch_size, None]),
