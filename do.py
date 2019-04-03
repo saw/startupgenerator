@@ -7,7 +7,7 @@ import numpy as np
 import os
 import time
 
-text = open('out.txt', 'rb').read().decode(encoding='utf-8')
+text = open('companies.txt', 'rb').read().decode(encoding='utf-8')
 print ('Length of text: {} characters'.format(len(text)))
 vocab = sorted(set(text))
 # print ('{} unique characters'.format(len(vocab)))
